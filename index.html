@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjun Jatav - Portfolio</title>
-    <link rel="icon" type="image/png" href="Images/Profile.jpeg">
+    <title>Tech Innovations - Company Profile</title>
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        /* Custom Tailwind overrides */
         .gradient-bg {
             background: linear-gradient(135deg, #220C27, #7C2A8D);
         }
 
         .project-card,
-        .achievement-card,
-        .experience-card,
+        .service-card,
+        .team-card,
         .skill-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 1px solid rgba(0, 0, 0, 0.05);
@@ -27,8 +26,8 @@
         }
 
         .project-card:hover,
-        .achievement-card:hover,
-        .experience-card:hover,
+        .service-card:hover,
+        .team-card:hover,
         .skill-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -57,27 +56,14 @@
             background: #f9f1fc;
         }
 
-        .flutter-logo,
-        .react-logo,
-        .skill-icon,
-        .achievement-icon,
-        .nav-profile-img {
+        .icon-lg {
             width: 28px;
             height: 28px;
             transition: transform 0.3s ease;
         }
 
-        .flutter-logo:hover,
-        .react-logo:hover,
-        .skill-icon:hover,
-        .achievement-icon:hover,
-        .nav-profile-img:hover {
+        .icon-lg:hover {
             transform: scale(1.1);
-        }
-
-        .achievement-icon {
-            width: 20px;
-            height: 20px;
         }
 
         .fade-in {
@@ -114,7 +100,6 @@
             transform: scale(1.05);
         }
 
-        /* Mobile Navigation */
         .nav-mobile {
             display: none;
         }
@@ -148,11 +133,22 @@
                 padding: 0.5rem 0;
                 text-align: center;
             }
+        }
 
-            .nav-profile-img {
-                width: 24px;
-                height: 24px;
-            }
+        .stat-box {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #7C2A8D;
+        }
+
+        .stat-label {
+            color: #666;
+            margin-top: 0.5rem;
         }
     </style>
 </head>
@@ -162,17 +158,18 @@
     <nav class="nav-sticky py-4">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <img src="Images/Profile.jpeg" alt="Arjun Jatav"
-                    class="nav-profile-img rounded-full border-2 border-[#7C2A8D]">
-                <div class="text-2xl font-semibold text-gray-800">Arjun Jatav</div>
+                <div class="w-10 h-10 bg-[#7C2A8D] rounded-full flex items-center justify-center text-white font-bold">
+                    TI
+                </div>
+                <div class="text-2xl font-semibold text-gray-800">Tech Innovations</div>
             </div>
             <!-- Desktop Navigation -->
             <div class="nav-desktop space-x-6">
                 <a href="#about" class="text-gray-600 hover:text-[#7C2A8D] font-medium">About</a>
-                <a href="#skills" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Skills</a>
-                <a href="#achievements" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Achievements</a>
-                <a href="#experience" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Experience</a>
-                <a href="#projects" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Projects</a>
+                <a href="#services" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Services</a>
+                <a href="#team" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Team</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Portfolio</a>
+                <a href="#stats" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Stats</a>
                 <a href="#contact" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Contact</a>
             </div>
             <!-- Mobile Navigation -->
@@ -182,10 +179,10 @@
                 </button>
                 <div id="nav-menu" class="nav-menu hidden">
                     <a href="#about" class="text-gray-600 hover:text-[#7C2A8D] font-medium">About</a>
-                    <a href="#skills" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Skills</a>
-                    <a href="#achievements" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Achievements</a>
-                    <a href="#experience" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Experience</a>
-                    <a href="#projects" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Projects</a>
+                    <a href="#services" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Services</a>
+                    <a href="#team" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Team</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Portfolio</a>
+                    <a href="#stats" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Stats</a>
                     <a href="#contact" class="text-gray-600 hover:text-[#7C2A8D] font-medium">Contact</a>
                 </div>
             </div>
@@ -195,325 +192,171 @@
     <!-- Header / Hero Section -->
     <header class="gradient-bg text-white py-20">
         <div class="container mx-auto px-4 text-center">
-            <img src="Images/Profile.jpeg" alt="Arjun Jatav"
-                class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-[#E6D0FA] shadow-lg">
-            <h1 class="text-2xl md:text-3xl font-bold mb-4">Arjun Jatav</h1>
+            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-[#E6D0FA] shadow-lg bg-white flex items-center justify-center">
+                <span class="text-5xl font-bold text-[#7C2A8D]">TI</span>
+            </div>
+            <h1 class="text-2xl md:text-3xl font-bold mb-4">Tech Innovations</h1>
             <p class="text-lg md:text-xl flex justify-center items-center">
-                <img src="Images/computer.png" alt="Mobile Developer Icon" class="react-logo mr-2">
-                Mobile Application Developer
+                <i class="fas fa-mobile-alt mr-2"></i>
+                Mobile & Web Development Solutions
             </p>
-            <p class="mt-4 max-w-2xl mx-auto text-base md:text-lg">Building innovative, User-focused, and Scalable
-                mobile apps with Flutter & React Native — crafted for impact, built to last, and designed to deliver
-                seamless performance across platforms. We turn complex ideas into intuitive digital experiences that
-                engage users and drive growth.</p>
-            <a href="#contact"
-                class="mt-6 inline-block bg-[#7C2A8D] text-white font-semibold py-2 px-8 rounded-md btn-animated">Get in
-                Touch</a>
+            <p class="mt-4 max-w-2xl mx-auto text-base md:text-lg">Delivering cutting-edge mobile applications and web solutions with a focus on innovation, scalability, and user experience. We transform ideas into powerful digital products that drive business growth.</p>
+            <a href="#contact" class="mt-6 inline-block bg-[#7C2A8D] text-white font-semibold py-2 px-8 rounded-md btn-animated">Get Started</a>
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="py-16 bg-white fade-in">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">About Me</h2>
+            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">About Us</h2>
             <div class="max-w-3xl mx-auto text-gray-600 leading-relaxed text-base md:text-lg">
                 <p class="mb-4">
-                    I’m <strong>Arjun Jatav</strong>, a passionate mobile app developer specializing in <strong>React
-                        Native & Flutter</strong>. I build
-                    high-quality, cross-platform apps with excellent performance and seamless user experiences. With a
-                    <strong>B.Tech</strong> in Computer Science (2018–2022), I leverage my expertise in JavaScript,
-                    Dart, Firebase, and
-                    UI/UX design to create mobile applications that deliver real value. I’m dedicated to clean design,
-                    smooth functionality, and staying updated with the latest in mobile technology.
+                    <strong>Tech Innovations</strong> is a forward-thinking software development company specializing in <strong>React Native, Flutter, and Web Technologies</strong>. Since our founding in 2020, we've been committed to delivering high-quality, cross-platform applications that combine excellent performance with seamless user experiences.
                 </p>
-
+                <p class="mb-4">
+                    Our team of experienced developers, designers, and strategists work collaboratively to solve complex business challenges through innovative technology solutions. We pride ourselves on clean code, transparent communication, and a client-first approach that ensures every project exceeds expectations.
+                </p>
+                <p>
+                    With a track record of successful projects and satisfied clients, we continue to push the boundaries of what's possible in mobile and web development.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-[#f9f1fc] fade-in">
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-[#f9f1fc] fade-in">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">Skills</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-                <div
-                    class="skill-card bg-white text-[#7C2A8D] font-medium text-center py-4 rounded-lg flex items-center justify-center">
-                    <img src="https://reactnative.dev/img/header_logo.svg" alt="React Native Logo"
-                        class="skill-icon mr-2"> React Native
+            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="service-card p-6 rounded-lg">
+                    <i class="fas fa-mobile-alt text-4xl text-[#7C2A8D] mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Mobile App Development</h3>
+                    <p class="text-gray-600">Custom iOS and Android applications using React Native and Flutter, designed for performance and user engagement.</p>
                 </div>
-                <div
-                    class="skill-card bg-white text-[#7C2A8D] font-medium text-center py-4 rounded-lg flex items-center justify-center">
-                    <img src="Images/js.png" alt="JavaScript Logo" class="skill-icon mr-2"> TS/JS
+                <div class="service-card p-6 rounded-lg">
+                    <i class="fas fa-globe text-4xl text-[#7C2A8D] mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Web Development</h3>
+                    <p class="text-gray-600">Responsive, scalable web applications built with modern frameworks and best practices for optimal performance.</p>
                 </div>
-                <div
-                    class="skill-card bg-white text-[#7C2A8D] font-medium text-center py-4 rounded-lg flex items-center justify-center">
-                    <img src="Images/firebase.png" alt="Firebase Logo" class="skill-icon mr-2"> Firebase
+                <div class="service-card p-6 rounded-lg">
+                    <i class="fas fa-palette text-4xl text-[#7C2A8D] mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">UI/UX Design</h3>
+                    <p class="text-gray-600">Beautiful, intuitive user interfaces that enhance user experience and drive engagement.</p>
                 </div>
-                <div
-                    class="skill-card bg-white text-[#7C2A8D] font-medium text-center py-4 rounded-lg flex items-center justify-center">
-                    <img src="Images/flutter.png" alt="Flutter Logo" class="skill-icon mr-2"> Flutter
+                <div class="service-card p-6 rounded-lg">
+                    <i class="fas fa-code text-4xl text-[#7C2A8D] mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">API Development</h3>
+                    <p class="text-gray-600">Robust REST and GraphQL APIs that power your applications with secure, efficient data management.</p>
                 </div>
-
-
-                <div
-                    class="skill-card bg-white text-[#7C2A8D] font-medium text-center py-4 rounded-lg flex items-center justify-center">
-                    <img src="Images/dart.png" alt="Dart Logo" class="skill-icon mr-2"> Dart
+                <div class="service-card p-6 rounded-lg">
+                    <i class="fas fa-cogs text-4xl text-[#7C2A8D] mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Maintenance & Support</h3>
+                    <p class="text-gray-600">Ongoing support, updates, and optimization to keep your applications running smoothly.</p>
                 </div>
-
-                <div
-                    class="skill-card bg-white text-[#7C2A8D] font-medium text-center py-4 rounded-lg flex items-center justify-center">
-                    <img src="Images/api.png" alt="REST APIs" class="skill-icon mr-2"> REST APIs
-                </div>
-                <div
-                    class="skill-card bg-white text-[#7C2A8D] font-medium text-center py-4 rounded-lg flex items-center justify-center">
-                    <img src="Images/git.png" alt="Git Logo" class="skill-icon mr-2"> Git
-                </div>
-                <div
-                    class="skill-card bg-white text-[#7C2A8D] font-medium text-center py-4 rounded-lg flex items-center justify-center">
-                    <img src="Images/design.png" alt="UI/UX Design" class="skill-icon mr-2"> UI/UX Design
+                <div class="service-card p-6 rounded-lg">
+                    <i class="fas fa-rocket text-4xl text-[#7C2A8D] mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">App Store Publishing</h3>
+                    <p class="text-gray-600">Complete guidance for publishing to Google Play Store and Apple App Store with compliance expertise.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="py-16 bg-white fade-in">
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-white fade-in">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">Achievements</h2>
+            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="team-card text-center p-6 rounded-lg">
+                    <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-[#7C2A8D] to-[#220C27] flex items-center justify-center text-white text-2xl font-bold">
+                        AJ
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800">Arjun Jatav</h3>
+                    <p class="text-[#7C2A8D] font-medium">Lead Developer</p>
+                    <p class="text-gray-600 mt-2 text-sm">React Native & Flutter specialist with 3+ years of experience building scalable mobile solutions.</p>
+                </div>
+                <div class="team-card text-center p-6 rounded-lg">
+                    <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-[#7C2A8D] to-[#220C27] flex items-center justify-center text-white text-2xl font-bold">
+                        SK
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800">Sophia Khan</h3>
+                    <p class="text-[#7C2A8D] font-medium">UI/UX Designer</p>
+                    <p class="text-gray-600 mt-2 text-sm">Creative designer focused on crafting beautiful and intuitive user interfaces that users love.</p>
+                </div>
+                <div class="team-card text-center p-6 rounded-lg">
+                    <div class="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-[#7C2A8D] to-[#220C27] flex items-center justify-center text-white text-2xl font-bold">
+                        RC
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800">Rahul Chopra</h3>
+                    <p class="text-[#7C2A8D] font-medium">Backend Developer</p>
+                    <p class="text-gray-600 mt-2 text-sm">Full-stack developer experienced in building robust APIs and scalable backend solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-[#f9f1fc] fade-in">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">Our Portfolio</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <div class="achievement-card bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
-                        <img src="Images/award.png" alt="Achievement Icon" class="achievement-icon mr-2" height="40"
-                            width="40">
-                        Skill Development Certificate (BSNL)
-                    </h3>
-                    <p class="text-gray-600 mt-2 text-base">BSNL’s emphasis on practical IT/telecom skills and
-                        collaborative learning environments.</p>
+                <div class="project-card p-6 rounded-lg">
+                    <div class="w-full h-40 bg-gradient-to-br from-blue-400 to-blue-600 rounded-md mb-4 flex items-center justify-center">
+                        <i class="fas fa-comments text-white text-5xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Social Messaging Platform</h3>
+                    <p class="text-gray-600 mb-2">React Native | 1.5M+ Users</p>
+                    <p class="text-gray-600">A comprehensive social networking app with real-time chat, calls, and story sharing capabilities serving millions of active users.</p>
                 </div>
-                <div class="achievement-card bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
-                        <img src="Images/award.png" alt="Achievement Icon" class="achievement-icon mr-2" height="40"
-                            width="40">
-                        Dashing Debut (eBizneeds)
-                    </h3>
-                    <p class="text-gray-600 mt-2 text-base">Earned eBizneeds Dashing Debut Award for teamwork in
-                        developing React Native app, supporting 10,00,000+ users.</p>
+                <div class="project-card p-6 rounded-lg">
+                    <div class="w-full h-40 bg-gradient-to-br from-green-400 to-green-600 rounded-md mb-4 flex items-center justify-center">
+                        <i class="fas fa-wallet text-white text-5xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Money Transfer App</h3>
+                    <p class="text-gray-600 mb-2">React Native | Secure Transactions</p>
+                    <p class="text-gray-600">A secure financial platform enabling users to send and receive money with integrated social messaging and live video calling features.</p>
                 </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience/Companies Section -->
-    <section id="experience" class="py-16 bg-[#f9f1fc] fade-in">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">Experience</h2>
-            <div class="max-w-4xl mx-auto space-y-6">
-               <div class="experience-card bg-white rounded-lg shadow-lg p-6">
-  <h3 class="text-lg font-semibold text-gray-800">
-    <i class="fas fa-briefcase mr-2 text-[#7C2A8D]"></i>
-    Dev Technosys Private Limited, Jaipur
-  </h3>
-  <p class="text-gray-500 text-sm">Mobile Application Developer | June 2025 - Present</p>
-
-  <p class="text-gray-600 mt-2 text-base">
-    1. Built a cross-platform app for task tracking using React Native and React Navigation.
-  </p>
-  <p class="text-gray-600 mt-1 text-base">
-    2. Utilized Redux in a React Native note-taking app to manage app state, reducing UI inconsistencies by centralizing data flow.
-  </p>
-  <p class="text-gray-600 mt-1 text-base">
-    3. Implemented state management with useState and Context API, reducing API calls by 10%.
-  </p>
-  <p class="text-gray-600 mt-1 text-base">
-    4. Integrated RESTful APIs and optimized API response handling, improving data fetching performance by 15%.
-  </p>
-  <p class="text-gray-600 mt-1 text-base">
-    5. Worked closely with the backend team to design API contracts and resolve integration issues, ensuring seamless cross-platform functionality.
-  </p>
-  <p class="text-gray-600 mt-1 text-base">
-    6. Implemented push notifications and deep linking using Firebase for enhanced user engagement.
-  </p>
-  <p class="text-gray-600 mt-1 text-base">
-    7. Improved app load time by 20% through code optimization and lazy loading techniques.
-  </p>
-  <p class="text-gray-600 mt-1 text-base">
-    8. Contributed to UI/UX improvements with reusable components and responsive layouts using Tailwind CSS and Styled Components.
-  </p>
-  <p class="text-gray-600 mt-1 text-base">
-    9. Collaborated with QA engineers to debug and fix high-priority issues, reducing post-release bugs by 30%.
-  </p>
-  <p class="text-gray-600 mt-1 text-base">
-    10. Participated in sprint planning, code reviews, and documentation to maintain clean, maintainable, and scalable codebases.
-  </p>
-</div>
-                <div class="experience-card bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-lg font-semibold text-gray-800"><i class="fas fa-briefcase mr-2 text-[#7C2A8D]"></i>
-                        ebizneeds Business Solutions Pvt. Ltd, Jaipur</h3>
-                    <p class="text-gray-500 text-sm">Mobile Application Developer | Sept 2023 - Apr
-                        2025</p>
-                    <p class="text-gray-600 mt-2 text-base">
-                        1.Developed and maintained 3 cross-platform mobile apps using
-                        React Native, serving 10,000,00+ users, with features like real-time
-                        chat and Calls.</p>
-                    <p class="text-gray-600 mt-1 text-base">
-                        2.Implemented state management with Redux and Context API,
-                        reducing code complexity by 15% through modular architecture.</p>
-                    <p class="text-gray-600 mt-1 text-base">
-                        3.Integrated native modules in Kotlin and Swift for camera and push
-                        notifications, enhancing app functionality.</p>
-
-                    <p class="text-gray-600 mt-1 text-base">
-                        4.Published apps to Google Play Store and Apple App Store, ensuring
-                        compliance with platform guidelines.</p>
-                    <p class="text-gray-600 mt-1 text-base">
-                        5.Developed a React Native task management app with light and dark
-                        themes, using Context API to toggle themes.</p>
+                <div class="project-card p-6 rounded-lg">
+                    <div class="w-full h-40 bg-gradient-to-br from-purple-400 to-purple-600 rounded-md mb-4 flex items-center justify-center">
+                        <i class="fas fa-briefcase text-white text-5xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Sales Partner Platform</h3>
+                    <p class="text-gray-600 mb-2">Flutter | Income Generation</p>
+                    <p class="text-gray-600">A platform empowering users to become sales partners and earn unlimited income through a user-friendly interface and networking features.</p>
+                </div>
+                <div class="project-card p-6 rounded-lg">
+                    <div class="w-full h-40 bg-gradient-to-br from-orange-400 to-orange-600 rounded-md mb-4 flex items-center justify-center">
+                        <i class="fas fa-book text-white text-5xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">AI Study Assistant</h3>
+                    <p class="text-gray-600 mb-2">Flutter | AI-Powered</p>
+                    <p class="text-gray-600">An intelligent homework solver app leveraging AI to provide fast and accurate solutions for academic problems across subjects.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-white fade-in">
+    <!-- Stats Section -->
+    <section id="stats" class="py-16 bg-white fade-in">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="project-card bg-white rounded-lg shadow-lg p-6">
-                    <img src="Images/tokee.webp" alt="Chat App" class="w-full h-40 object-cover rounded-md mb-4">
-                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
-                        <img src="https://reactnative.dev/img/header_logo.svg" alt="React Native Logo"
-                            class="w-5 h-5 mr-2"> TOKEE
-                    </h3>
-                    <p class="text-gray-600 mt-2 text-base">A social networking app that enables users to upload
-                        stories, chat with friends, and participate in calls. Successfully reached over 1.5 million
-                        users with 10,000+ downloads, demonstrating robust performance and high user engagement.Supports
-                        Android and iOS.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.deucetek.tokee&hl=en"
-                        class="mt-4 inline-block text-[#7C2A8D] font-medium hover:underline"><i
-                            class="fas fa-link mr-2"></i> View Project</a>
+            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">Our Impact</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="stat-box bg-[#f9f1fc] rounded-lg">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects Completed</div>
                 </div>
-                <div class="project-card bg-white rounded-lg shadow-lg p-6">
-                    <img src="Images/collab.webp" alt="Sales Partner" class="w-full h-40 object-cover rounded-md mb-4">
-                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
-                        <img src="Images/flutter.png" alt="Flutter Logo" class="w-5 h-5 mr-2"> CollabAct Sales Partner
-                    </h3>
-                    <p class="text-gray-600 mt-2 text-base">A platform empowering users aged 18–50 to earn unlimited
-                        income by becoming a sales partner. Supports both Android and iOS, with opportunities to grow
-                        income and network with ease.Supports
-                        Android and iOS</p>
-                    <a href="https://apps.apple.com/in/app/collabact-sales-partner/id6503295893"
-                        class="mt-4 inline-block text-[#7C2A8D] font-medium hover:underline"><i
-                            class="fas fa-link mr-2"></i> View Project</a>
+                <div class="stat-box bg-[#f9f1fc] rounded-lg">
+                    <div class="stat-number">10M+</div>
+                    <div class="stat-label">Active Users</div>
                 </div>
-                <div class="project-card bg-white rounded-lg shadow-lg p-6">
-                    <img src="Images/Wokii.webp" alt="Chat App" class="w-full h-40 object-cover rounded-md mb-4">
-                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
-                        <img src="https://reactnative.dev/img/header_logo.svg" alt="React Native Logo"
-                            class="w-5 h-5 mr-2"> WOKII
-                    </h3>
-                    <p class="text-gray-600 mt-2 text-base">Receive and send money with Wokii—the money transfer app
-                        that offers social interaction through private messenger features, including live video chat 📹,
-                        voice chat 🎙️, and text messaging 💬 with friends and family, demonstrating robust performance
-                        and high user engagement.Supports
-                        Android and iOS.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.wokiiapp&hl=en_IN"
-                        class="mt-4 inline-block text-[#7C2A8D] font-medium hover:underline"><i
-                            class="fas fa-link mr-2"></i> View Project</a>
+                <div class="stat-box bg-[#f9f1fc] rounded-lg">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Happy Clients</div>
                 </div>
-                <div class="project-card bg-white rounded-lg shadow-lg p-6">
-                    <img src="Images/HomeWork.webp" alt="HomeWork Helper"
-                        class="w-full h-40 object-cover rounded-md mb-4">
-                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
-                        <img src="Images/flutter.png" alt="Flutter Logo" class="w-5 h-5 mr-2"> HomeWork Helper
-                    </h3>
-                    <p class="text-gray-600 mt-2 text-base">Get the help you need with our advanced AI-powered mobile
-                        app study helper! HomeWork Ai is designed to be your next homework solver for school help by
-                        providing fast and accurate solutions to any homework questions, from math problems & grammar
-                        checks to essay generation.Supports
-                        Android and iOS</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.omyteq.homework"
-                        class="mt-4 inline-block text-[#7C2A8D] font-medium hover:underline"><i
-                            class="fas fa-link mr-2"></i> View Project</a>
+                <div class="stat-box bg-[#f9f1fc] rounded-lg">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years Experience</div>
                 </div>
-
-                <div class="project-card bg-white rounded-lg shadow-lg p-6">
-                    <img src="Images/btRoomerwebp.webp" alt="BTROOMER Tenant"
-                        class="w-full h-40 object-cover rounded-md mb-4">
-                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
-                        <img src="Images/flutter.png" alt="Flutter Logo" class="w-5 h-5 mr-2"> BTROOMER Tenant
-                    </h3>
-                    <p class="text-gray-600 mt-2 text-base">BTROOMER Tenant, your comprehensive solution for efficient
-                        management of payments, rent due dates, and rent history. Our app simplifies the process of
-                        finding suitable accommodations and exploring amenities offered by various PGs.Supports
-                        Android and iOS</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.zucolgroup.tenant"
-                        class="mt-4 inline-block text-[#7C2A8D] font-medium hover:underline"><i
-                            class="fas fa-link mr-2"></i> View Project</a>
-                </div>
-                <div class="project-card bg-white rounded-lg shadow-lg p-6">
-                    <img src="Images/doctolink.png" alt="Chat App" class="w-full h-40 object-cover rounded-md mb-4">
-                    <h3 class="text-lg font-semibold text-gray-800 flex items-center">
-                        <img src="https://reactnative.dev/img/header_logo.svg" alt="React Native Logo"
-                            class="w-5 h-5 mr-2"> Doctolink
-                    </h3>
-                    <p class="text-gray-600 mt-2 text-base">Doctolinkapp makes it easy and secure to find doctors and
-                        book appointments 24/7.
-                        With a modern and user-friendly platform,Search specialists by name, location, availability, or
-                        specialty.
-                        Book appointments in seconds,Access a trusted directory of clinics and medical centers in El
-                        Salvador.
-                        Doctolinkapp keeps patients and doctors connected in one place, demonstrating robust performance
-                        and high user engagement.Supports
-                        Android and iOS.</p>
-                    <a href="https://apps.apple.com/us/app/doctolink/id6741566643"
-                        class="mt-4 inline-block text-[#7C2A8D] font-medium hover:underline"><i
-                            class="fas fa-link mr-2"></i> View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-16 bg-[#f9f1fc] fade-in">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">Education</h2>
-            <div class="max-w-4xl mx-auto space-y-6">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-lg font-semibold text-gray-800"><i
-                            class="fas fa-graduation-cap mr-2 text-[#7C2A8D]"></i> B.Tech in Computer Science and
-                        Engineering</h3>
-                    <p class="text-gray-500 text-sm">Himachal Pradesh Technical University,Hamirpur(HP) | 2018 - 2022
-                    </p>
-                    <p class="text-gray-600 mt-2 text-base">Specialized in software engineering with a
-                        focus on mobile app development. Completed projects in mobile app development and cloud
-                        computing.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="py-16 bg-white fade-in">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">
-                Certifications
-            </h2>
-            <div class="max-w-4xl mx-auto">
-                <ul class="space-y-4">
-                    <li class="bg-white rounded-lg shadow-md p-4">
-                        <p class="text-gray-600 text-base">
-                            <i class="fas fa-certificate mr-2 text-[#7C2A8D]"></i>
-                            <strong>Software Developer (Internship)</strong>, Mobzway Technologies (Jaipur), 2022
-                        </p>
-                    </li>
-                    <li class="bg-white rounded-lg shadow-md p-4">
-                        <p class="text-gray-600 text-base">
-                            <i class="fas fa-certificate mr-2 text-[#7C2A8D]"></i>
-                            <strong>Web Design</strong>, ThinkNEXT Technologies (Punjab), 2020
-                        </p>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
@@ -521,21 +364,13 @@
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-[#f9f1fc] fade-in">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">Contact Me</h2>
+            <h2 class="text-3xl md:text-2xl font-bold text-center text-gray-800 mb-10 section-title">Get In Touch</h2>
             <div class="max-w-lg mx-auto text-gray-600">
-                <p class="mb-3 flex items-center text-base"><i class="fas fa-envelope mr-2 text-[#7C2A8D]"></i> <a
-                        href="mailto:arjun1999jatav@gmail.com" class="text-[#7C2A8D] hover:underline">with Gmail</a></p>
-                <!-- <p class="mb-3 flex items-center text-base"><i class="fab fa-github mr-2 text-[#7C2A8D]"></i> <a
-                        href="https://github.com/arjunjatav"
-                        class="text-[#7C2A8D] hover:underline">github.com/arjunjatav</a></p> -->
-                <p class="mb-3 flex items-center text-base"><i class="fab fa-linkedin mr-2 text-[#7C2A8D]"></i> <a
-                        href="https://www.linkedin.com/in/arjun-jatav-19b16b22b"
-                        class="text-[#7C2A8D] hover:underline">with Linkedin</a></p>
-                <p class="mt-4 text-base">Let’s collaborate to build innovative mobile applications. Reach out for
-                    project inquiries or opportunities.</p>
-                <a href="#contact"
-                    class="mt-6 inline-block bg-[#7C2A8D] text-white font-semibold py-2 px-8 rounded-md btn-animated"><i
-                        class="fas fa-rocket mr-2"></i> Start a Project</a>
+                <p class="mb-3 flex items-center text-base"><i class="fas fa-envelope mr-2 text-[#7C2A8D]"></i> <a href="mailto:contact@techinnovations.com" class="text-[#7C2A8D] hover:underline">contact@techinnovations.com</a></p>
+                <p class="mb-3 flex items-center text-base"><i class="fas fa-phone mr-2 text-[#7C2A8D]"></i> <span class="text-[#7C2A8D]">+1 (555) 123-4567</span></p>
+                <p class="mb-3 flex items-center text-base"><i class="fab fa-linkedin mr-2 text-[#7C2A8D]"></i> <a href="#" class="text-[#7C2A8D] hover:underline">LinkedIn Profile</a></p>
+                <p class="mt-4 text-base">Ready to bring your project to life? Let's collaborate and create something extraordinary together.</p>
+                <a href="#contact" class="mt-6 inline-block bg-[#7C2A8D] text-white font-semibold py-2 px-8 rounded-md btn-animated"><i class="fas fa-rocket mr-2"></i> Start Your Project</a>
             </div>
         </div>
     </section>
@@ -543,7 +378,7 @@
     <!-- Footer -->
     <footer class="gradient-bg text-white py-6">
         <div class="container mx-auto px-4 text-center">
-            <p class="text-base">© 2025 Arjun Jatav. Crafted with passion for mobile innovation.</p>
+            <p class="text-base">© 2025 Tech Innovations. Building the future, one app at a time.</p>
         </div>
     </footer>
 
