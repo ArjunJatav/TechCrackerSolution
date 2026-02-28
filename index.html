@@ -14,6 +14,45 @@
             background: linear-gradient(135deg, #0F4C75, #3282B8);
         }
 
+        /* Hero improvements */
+        .hero-bg {
+            background: url('https://via.placeholder.com/1600x900?text=Tech+Background') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 76, 117, 0.65);
+        }
+
+        /* Navigation backdrop blur and scroll effect */
+        .nav-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.85);
+            transition: background 0.3s ease;
+        }
+
+        .nav-sticky.scrolled {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        /* Primary button style */
+        .btn-primary {
+            background: linear-gradient(90deg, #3282B8, #0F4C75);
+            color: #fff;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(50, 130, 184, 0.25);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #0F4C75, #3282B8);
+            transform: scale(1.05);
+        }
+
         .project-card,
         .service-card,
         .team-card,
@@ -64,6 +103,18 @@
 
         .icon-lg:hover {
             transform: scale(1.1);
+        }
+
+        /* scale fontawesome icons inside cards */
+        .service-card i,
+        .project-card i,
+        .stat-box i {
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover i,
+        .project-card:hover i {
+            transform: scale(1.2);
         }
 
         .fade-in {
@@ -192,8 +243,9 @@
     </nav>
 
     <!-- Header / Hero Section -->
-    <header class="gradient-bg text-white py-20">
-        <div class="container mx-auto px-4 text-center">
+    <header class="hero-bg text-white py-20">
+        <div class="hero-overlay"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
           <div class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-[#A4D4FF] shadow-lg bg-white flex items-center justify-center overflow-hidden">
     <img 
       src="Images/logo.png"
@@ -207,7 +259,7 @@
                 Mobile & Web Development Solutions
             </p>
             <p class="mt-4 max-w-2xl mx-auto text-base md:text-lg">Delivering cutting-edge mobile applications and web solutions with a focus on innovation, scalability, and user experience. We transform ideas into powerful digital products that drive business growth.</p>
-            <a href="#contact" class="mt-6 inline-block bg-[#3282B8] text-white font-semibold py-2 px-8 rounded-md btn-animated">Get Started</a>
+            <a href="#contact" class="mt-6 inline-block btn-primary py-3 px-10 rounded-full btn-animated">Get Started</a>
         </div>
     </header>
 
@@ -449,12 +501,61 @@
         </div>
     </footer>
 
-    <!-- Mobile Navigation Script -->
+    <!-- Mobile Navigation & scroll script -->
     <script>
         const navToggle = document.getElementById('nav-toggle');
         const navMenu = document.getElementById('nav-menu');
         navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
+        });
+
+        // add class when page is scrolled
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // simple count-up animation for stats
+        function animateStat(el, target) {
+            let count = 0;
+            const step = Math.ceil(target / 100);
+            const interval = setInterval(() => {
+                count += step;
+                if (count >= target) {
+                    el.textContent = target + (el.dataset.suffix || '');
+                    clearInterval(interval);
+                } else {
+                    el.textContent = count + (el.dataset.suffix || '');
+                }
+            }, 20);
+        }
+
+        const stats = document.querySelectorAll('.stat-number');
+        let statsAnimated = false;
+        window.addEventListener('scroll', () => {
+            const statsSection = document.getElementById('stats');
+            if (!statsAnimated && statsSection.getBoundingClientRect().top < window.innerHeight - 100) {
+                stats.forEach(el => {
+                    const target = parseInt(el.textContent.replace(/\D/g, ''), 10);
+                    el.dataset.suffix = el.textContent.replace(/\d/g, '');
+                    animateStat(el, target);
+                });
+                statsAnimated = true;
+            }
         });
     </script>
 </body>
