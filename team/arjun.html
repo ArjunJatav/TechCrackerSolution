@@ -7,34 +7,102 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100 font-poppins">
+<body class="bg-gray-50 font-poppins">
     <div class="container mx-auto px-4 py-12">
         <a href="../index.html" class="text-blue-600 hover:underline mb-6 inline-block">&larr; Back to Home</a>
-        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-            <div class="flex flex-col items-center">
-                <img src="../Images/ArjunProfile.jpeg" alt="Arjun Jatav" class="w-32 h-32 rounded-full mb-4">
-                <h1 class="text-2xl font-bold mb-1">Arjun Jatav</h1>
-                <p class="text-blue-600 font-medium mb-4">Founder & CEO</p>
+        <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+            <!-- Header Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8">
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                    <img src="../Images/ArjunProfile.jpeg" alt="Arjun Jatav" class="w-32 h-32 rounded-full border-4 border-white mb-4 md:mb-0 md:mr-8">
+                    <div class="text-center md:text-left">
+                        <h1 class="text-3xl font-bold mb-2">Arjun Jatav</h1>
+                        <p class="text-xl mb-2">Mobile Application Developer | React Native | Flutter Developer</p>
+                        <p class="text-sm mb-2">+91 9057837784 | arjun1999jatav@gmail.com | Jaipur, India</p>
+                        <p class="text-sm"><a href="https://www.linkedin.com/in/arjun-jatav-19b16b22b" class="hover:underline">linkedin.com/in/arjun-jatav-19b16b22b</a></p>
+                    </div>
+                </div>
             </div>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Education</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Bachelor of Engineering in Computer Science, XYZ University (2016)</li>
-                    <li>Certified React Native & Flutter Developer</li>
-                </ul>
-            </section>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Projects</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Social Messaging Platform (React Native) – 1.5M+ users</li>
-                    <li>Money Transfer App with integrated chat</li>
-                    <li>Sales Partner Platform (Flutter)</li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="text-xl font-semibold mb-2">About</h2>
-                <p class="text-gray-700">Arjun leads TechCrackerSolution with a passion for mobile-first experiences and clean architecture. With over 8 years of industry experience, he focuses on strategic planning, client engagement, and hands-on technical leadership.</p>
-            </section>
+            <!-- Main Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+                <!-- Left Column -->
+                <div class="md:col-span-1 space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Skills</h2>
+                        <p class="text-gray-700">React Native, Flutter, JavaScript, Firebase, Dart, Android Studio, Git, Redux, Socket, Push Notification, Mixpanel, TypeScript</p>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Education</h2>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>Master of Technology (Computer Science Engineering), Rajasthan Technical University, Kota (07/2022 - 08/2024)</li>
+                            <li>Bachelor of Technology (Computer Science Engineering), Himachal Pradesh Technical University (07/2018 - 08/2022)</li>
+                        </ul>
+                    </section>
+                </div>
+                <!-- Right Column -->
+                <div class="md:col-span-2 space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Summary</h2>
+                        <p class="text-gray-700">Results-driven Mobile App Developer with 3+ years of experience specializing in cross-platform development using React Native and Flutter. Experienced in end-to-end app development, third-party integrations, state management, push notifications, and performance optimization. Adept at problem-solving, collaborating with product and design teams, and delivering reliable, high-quality mobile applications that enhance user engagement and business growth.</p>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Experience</h2>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Senior Mobile Application Developer</h3>
+                                <p class="text-blue-600 font-medium">Dev Technosys Private Limited (06/2025 - Present)</p>
+                                <ul class="text-gray-700 list-disc list-inside space-y-1 mt-2">
+                                    <li>Designed and implemented scalable state management using Redux, MobX, and Flutter Bloc, reducing regression issues by 30%.</li>
+                                    <li>Architected modular and reusable component libraries, cutting development effort for new features by 40%.</li>
+                                    <li>Optimized performance, reducing load time by 45% and memory usage by 25%.</li>
+                                    <li>Integrated complex native modules for push notifications, payments, camera processing using Kotlin, Swift, Objective-C.</li>
+                                    <li>Implemented CI/CD pipelines with Fastlane, GitHub Actions, and Bitrise.</li>
+                                    <li>Led cross-functional team of 4–8 developers; conducted code reviews, sprint planning, mentoring.</li>
+                                    <li>Collaborated with Product, Design, Backend to define scalable solutions, accelerating feature delivery by 35%.</li>
+                                    <li>Implemented OAuth, JWT, biometric authentication, and data encryption.</li>
+                                    <li>Managed App Store/Play Store releases including certificates and crash monitoring.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Mobile Application Developer</h3>
+                                <p class="text-blue-600 font-medium">ebizneeds Business Solutions Pvt. Ltd. (09/2023 - 04/2025)</p>
+                                <ul class="text-gray-700 list-disc list-inside space-y-1 mt-2">
+                                    <li>Developed/maintained two cross-platform React Native apps serving 1M+ users, with real-time chat and calls.</li>
+                                    <li>Implemented state management with Redux and Context API, reducing code complexity by 15%.</li>
+                                    <li>Integrated native Kotlin/Swift modules for camera and push notifications.</li>
+                                    <li>Published apps to Google Play and Apple App Store.</li>
+                                    <li>Built React Native task management app with light/dark themes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Projects</h2>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Tokee/Wokii</h3>
+                                <p class="text-gray-700">Social networking app enabling story uploads, chat, and calls; reached 1.5M+ users. Technologies: React Native, Redux, Firebase, Push Notification, i18next, Themes, Socket.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">HomeWork Helper</h3>
+                                <p class="text-gray-700">AI-powered Flutter study helper app with in-app purchases; supports Android and iOS.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Doctolink</h3>
+                                <p class="text-gray-700">Medical appointment app built with React Native, Redux, Firebase, and Push Notification.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Nowgas/Nowgas Driver</h3>
+                                <p class="text-gray-700">LPG industry app featuring ordering, tracking, dealer operations; built with React Native, Redux, Firebase, Push Notification, Maps, Socket.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">MyBest11</h3>
+                                <p class="text-gray-700">Fantasy sports platform with team creation, contests, live scores using React Native, Redux, Firebase, Push Notification, Socket.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 </body>

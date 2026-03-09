@@ -7,33 +7,119 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100 font-poppins">
+<body class="bg-gray-50 font-poppins">
     <div class="container mx-auto px-4 py-12">
         <a href="../index.html" class="text-blue-600 hover:underline mb-6 inline-block">&larr; Back to Home</a>
-        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-            <div class="flex flex-col items-center">
-                <img src="../Images/YuvrajProfile.png" alt="Yuvraj Kumawat" class="w-32 h-32 rounded-full mb-4">
-                <h1 class="text-2xl font-bold mb-1">Yuvraj Kumawat</h1>
-                <p class="text-blue-600 font-medium mb-4">Flutter Developer</p>
+        <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+            <!-- Header Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8">
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                    <img src="../Images/YuvrajProfile.png" alt="Yuvraj Kumawat" class="w-32 h-32 rounded-full border-4 border-white mb-4 md:mb-0 md:mr-8">
+                    <div class="text-center md:text-left">
+                        <h1 class="text-3xl font-bold mb-2">Yuvraj Kumawat</h1>
+                        <p class="text-xl mb-2">Flutter Developer</p>
+                        <p class="text-sm"><a href="https://linkedin.com/in/yuvrajk28" class="hover:underline">linkedin.com/in/yuvrajk28</a></p>
+                    </div>
+                </div>
             </div>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Education</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Bachelor of Science in Computer Science, GHI College (2019)</li>
-                    <li>Google Developers Certified Flutter Developer</li>
-                </ul>
-            </section>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Highlighted Work</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Developed AI Study Assistant app in Flutter</li>
-                    <li>Contributed to cross-platform UI libraries</li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="text-xl font-semibold mb-2">About</h2>
-                <p class="text-gray-700">Yuvraj creates fast, beautiful mobile applications with Flutter. He is passionate about fluid animations and clean UX.</p>
-            </section>
+            <!-- Main Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+                <!-- Left Column -->
+                <div class="md:col-span-1 space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Skills</h2>
+                        <p class="text-gray-700">C, C++, Dart, Flutter, Android Studio, Github, Postman, Problem Solving, Xcode, Clean Architecture</p>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Education</h2>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>B. Tech. (Computer Science), Maharishi Arvind Institute of Engineering & Technology (07/2018 – 06/2022)</li>
+                            <li>12th, Chitransh Public Sen. Sec. School (07/2017 – 03/2018)</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Languages</h2>
+                        <p class="text-gray-700">Hindi, English</p>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Interests</h2>
+                        <p class="text-gray-700">Gardening, Watching Movies</p>
+                    </section>
+                </div>
+                <!-- Right Column -->
+                <div class="md:col-span-2 space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Summary</h2>
+                        <p class="text-gray-700">As a Hybrid Mobile App Developer with 3.5 years of experience, I have crafted responsive apps that seamlessly bridge the gap between iOS and Android platforms. Implemented Stripe and in-app purchase payment methods. Proficient in GetX, BLOC, and Provider, I develop cross-platform apps that deliver consistent user experiences on both iOS and Android.</p>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Experience</h2>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Flutter Developer</h3>
+                                <p class="text-blue-600 font-medium">Dev Technosys Private Limited</p>
+                                <ul class="text-gray-700 list-disc list-inside space-y-1 mt-2">
+                                    <li>Contributed to diverse projects including ecommerce, social media, tracking, and gaming applications, ensuring high performance and scalability.</li>
+                                    <li>Developed fantasy sports features such as team creation, contests, leaderboards, live scores, live bidding (WebSockets), real-time chat, and integrated secure payment solutions.</li>
+                                    <li>Implemented in-app purchase, Stripe and Apcopay payment methods.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Flutter Developer</h3>
+                                <p class="text-blue-600 font-medium">The NineHertz</p>
+                                <ul class="text-gray-700 list-disc list-inside space-y-1 mt-2">
+                                    <li>Contributed to a diverse range of projects, including ecommerce, social media and tracking applications.</li>
+                                    <li>Proposed and implemented Clean Architecture, Provider, Bloc, and GetX, enhancing app performance.</li>
+                                    <li>Designed and delivered reliable solutions using multiple technologies, focusing on performance, scalability, and robustness.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Flutter Intern</h3>
+                                <p class="text-blue-600 font-medium">The Nine Hertz</p>
+                                <p class="text-gray-600 text-sm mb-2">Jun 2022 – Aug 2022</p>
+                                <p class="text-gray-700">Completed a 3-month internship in Flutter development, gaining hands-on experience with hybrid apps and Provider state management.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Projects</h2>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Bright Digi Gold</h3>
+                                <p class="text-gray-700">Developed a high-scale digital gold and silver investment app with 10L+ downloads, enabling real-time buying, selling, and price tracking. Implemented end-to-end API encryption and decryption to protect sensitive financial and user data.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Suad Duel (Football Fantasy)</h3>
+                                <p class="text-gray-700">Developed a fantasy football app enabling users to create teams, join contests, and track leaderboard performance. Implemented real-time live scores and in-app chat using WebSockets for enhanced user engagement. Integrated Apcopay payment gateway for secure transactions.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Ziskat</h3>
+                                <p class="text-gray-700">Built a car auction platform enabling users to participate in live bidding for vehicle purchases. Implemented real-time auction updates for transparent and competitive bidding, focusing on seamless user experience with scalable architecture.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Geez (Grass Eliminated Easy)</h3>
+                                <p class="text-gray-700">App allowing users to submit requests to mowers to get their lawn cut with live tracking features on Google Maps.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">NIS Cards</h3>
+                                <p class="text-gray-700">An app for creating, buying, or selling digital signed and unsigned trading cards using Stripe payment. Users can create custom cards, add celebrity signatures via selfie, and participate in a marketplace to auction unique cards.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Howdy Neighbor</h3>
+                                <p class="text-gray-700">Marketplace app where users can buy, rent, or list items. Integrated Stripe for merchant payments.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">What The Truck</h3>
+                                <p class="text-gray-700">App connecting consumers with nearby mobile food vendors, displayed on Google Maps.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Find My Bartender</h3>
+                                <p class="text-gray-700">Allows users to find registered bars/restaurants, check in, view other checked-in users, chat, and rate service workers who can also check in and receive ratings.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 </body>
