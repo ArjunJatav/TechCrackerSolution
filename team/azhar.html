@@ -3,86 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohd. Azhar - Profile</title>
+    <title>Mohammad Azhar - React Native Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-100 font-poppins">
+<body class="bg-gray-50 font-poppins">
     <div class="container mx-auto px-4 py-12">
         <a href="../index.html" class="text-blue-600 hover:underline mb-6 inline-block">&larr; Back to Home</a>
-        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-            <div class="flex flex-col items-center">
-                <img src="../Images/AzharProfile.png" alt="Mohammad Azhar" class="w-32 h-32 rounded-full mb-4">
-                <h1 class="text-2xl font-bold mb-1">Mohammad Azhar</h1>
-                <p class="text-blue-600 font-medium mb-4">React Native Developer</p>
+        <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+            <!-- Header Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8">
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                    <img src="../Images/AzharProfile.png" alt="Mohammad Azhar" class="w-32 h-32 rounded-full border-4 border-white mb-4 md:mb-0 md:mr-8">
+                    <div class="text-center md:text-left">
+                        <h1 class="text-3xl font-bold mb-2">Mohammad Azhar</h1>
+                        <p class="text-xl mb-4">React Native Developer</p>
+                        <div class="flex flex-col md:flex-row md:space-x-6 text-sm">
+                         
+                            <div class="flex items-center mb-2 md:mb-0">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Jaipur, Rajasthan</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-linkedin mr-2"></i>
+                                <a href="#" class="hover:underline">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Profile</h2>
-                <p class="text-gray-700">React Native developer with 2.8 years of experience in building cross-platform mobile apps. Skilled in creating user-friendly and high-performance applications for Android and iOS.</p>
-            </section>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Skills</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>React Native</li>
-                    <li>Javascript</li>
-                    <li>HTML/CSS</li>
-                    <li>Firebase</li>
-                    <li>Redux / Context API</li>
-                    <li>Push Notifications</li>
-                    <li>Social Logins</li>
-                    <li>Git/Github Desktop</li>
-                    <li>App Deployment</li>
-                </ul>
-            </section>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Languages</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>English</li>
-                    <li>Hindi</li>
-                </ul>
-            </section>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Hobbies</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Singing</li>
-                    <li>Gaming</li>
-                    <li>Reading Tech Articles</li>
-                </ul>
-            </section>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Work Experience</h2>
-                <div class="mb-4">
-                    <h3 class="font-medium">React Native Developer</h3>
-                    <p class="text-gray-600">Optisoft Business Solutions Pvt. Ltd., Jaipur | Feb 2023 - Present</p>
-                    <p class="text-gray-700">Built cross-platform apps including a dating app, home service platform, and a live cricket scoring app with real-time chat, bookings, payments, and live match updates.</p>
+            <!-- Main Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+                <!-- Left Column -->
+                <div class="md:col-span-1 space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Skills</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React Native</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Redux / Context API</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Push Notifications</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Social Logins</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Git/GitHub</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">App Deployment</span>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Languages</h2>
+                        <ul class="space-y-1 text-gray-700">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                English
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Hindi
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Hobbies</h2>
+                        <ul class="space-y-1 text-gray-700">
+                            <li class="flex items-center">
+                                <i class="fas fa-music text-blue-500 mr-2"></i>
+                                Singing
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-gamepad text-blue-500 mr-2"></i>
+                                Gaming
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-book text-blue-500 mr-2"></i>
+                                Reading Tech Articles
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Education</h2>
+                        <div class="space-y-3">
+                            <div>
+                                <h3 class="font-medium text-gray-800">Post Graduation</h3>
+                                <p class="text-gray-600 text-sm">2019 - 2021</p>
+                                <p class="text-gray-700">St. Wilfred PG College, Jaipur</p>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">Graduation</h3>
+                                <p class="text-gray-600 text-sm">2015 - 2018</p>
+                                <p class="text-gray-700">Guru Nanak Khalsa College, Yamuna Nagar (Kurukshetra University)</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </section>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Projects</h2>
-                <div class="mb-4">
-                    <h3 class="font-medium">GreenFrog Lillypad</h3>
-                    <p class="text-gray-700">GreenFrog Lillypad is a cleaning management system powered by a dedicated team of top-rated cleaners, offering reliable and eco-friendly services. Cleaners manage bookings with ease, while customers enjoy booking and real-time tracking and updates.</p>
+                <!-- Right Column -->
+                <div class="md:col-span-2 space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Profile</h2>
+                        <p class="text-gray-700 leading-relaxed">React Native developer with 2.8 years of experience in building cross-platform mobile apps. Skilled in creating user-friendly and high-performance applications for Android and iOS.</p>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Work Experience</h2>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-gray-800">React Native Developer</h3>
+                            <p class="text-blue-600 font-medium">Optisoft Business Solutions Pvt. Ltd., Jaipur</p>
+                            <p class="text-gray-600 text-sm mb-2">Feb 2023 - Nov 2025</p>
+                            <p class="text-gray-700">Built cross-platform apps including a dating app, home service platform, and a live cricket scoring app with real-time chat, bookings, payments, and live match updates.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Projects</h2>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">GreenFrog Lillypad</h3>
+                                <p class="text-gray-700">A cleaning management system powered by a dedicated team of top-rated cleaners, offering reliable and eco-friendly services. Cleaners manage bookings with ease, while customers enjoy booking and real-time tracking and updates.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Hero Live Line</h3>
+                                <p class="text-gray-700">Designed and developed a cricket live-line mobile application. Integrated real-time score updates using backend APIs to provide ball-by-ball match information. Implemented features like live match status, player stats, match schedules, and team rankings.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">George Gankas Golf</h3>
+                                <p class="text-gray-700">Get deeper insights into your game by logging and analyzing key stats like scoring, driving, short game, and putting—using the same proven methods George Gankas applies with his students.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Fitter Foreward Golf App</h3>
+                                <p class="text-gray-700">Manage and track golf club fitters and customers with comprehensive profile management, streamlined appointment handling, and detailed shot history tracking for each player.</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div class="mb-4">
-                    <h3 class="font-medium">Hero Live Line</h3>
-                    <p class="text-gray-700">Designed and developed a cricket live-line mobile application. Integrated real-time score updates using backend APIs to provide ball-by-ball match information. Implemented features like live match status, player stats, match schedules, and team rankings.</p>
-                </div>
-                <div class="mb-4">
-                    <h3 class="font-medium">George Gankas Golf</h3>
-                    <p class="text-gray-700">Get deeper insights into your game by logging and analyzing key stats like scoring, driving, short game, and putting—using the same proven methods George Gankas applies with his students.</p>
-                </div>
-                <div class="mb-4">
-                    <h3 class="font-medium">Fitter Foreward Golf App</h3>
-                    <p class="text-gray-700">Manage and track golf club fitters and customers with comprehensive profile management, streamlined appointment handling, and detailed shot history tracking for each player.</p>
-                </div>
-            </section>
-            <section>
-                <h2 class="text-xl font-semibold mb-2">Education</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Post Graduation, 2019 - 2021, St. Wilfred PG College, Jaipur</li>
-                    <li>Graduation, 2015 - 2018, Guru Nanak Khalsa College, Yamuna Nagar (Kurukshetra University)</li>
-                </ul>
-            </section>
+            </div>
         </div>
     </div>
 </body>
