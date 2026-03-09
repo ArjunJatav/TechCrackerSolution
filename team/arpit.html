@@ -3,37 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arpit Jaiswal - Profile</title>
+    <title>Arpit Jaiswal - React Native Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-100 font-poppins">
+<body class="bg-gray-50 font-poppins">
     <div class="container mx-auto px-4 py-12">
         <a href="../index.html" class="text-blue-600 hover:underline mb-6 inline-block">&larr; Back to Home</a>
-        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-            <div class="flex flex-col items-center">
-                <img src="../Images/ArpitProfile.png" alt="Arpit Jaiswal" class="w-32 h-32 rounded-full mb-4">
-                <h1 class="text-2xl font-bold mb-1">Arpit Jaiswal</h1>
-                <p class="text-blue-600 font-medium mb-4">CTO</p>
+        <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+            <!-- Header Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8">
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                    <img src="../Images/ArpitProfile.png" alt="Arpit Jaiswal" class="w-32 h-32 rounded-full border-4 border-white mb-4 md:mb-0 md:mr-8">
+                    <div class="text-center md:text-left">
+                        <h1 class="text-3xl font-bold mb-2">Arpit Jaiswal</h1>
+                        <p class="text-xl mb-4">React Native Developer</p>
+                        <div class="flex flex-col md:flex-row md:space-x-6 text-sm">
+                       
+                            <div class="flex items-center mb-2 md:mb-0">
+                                <i class="fab fa-linkedin mr-2"></i>
+                                <a href="#" class="hover:underline">LinkedIn</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-github mr-2"></i>
+                                <a href="#" class="hover:underline">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Education</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>M.Tech in Computer Science, JKL Institute (2015)</li>
-                    <li>Multiple Cloud Certifications (AWS, Azure)</li>
-                </ul>
-            </section>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Leadership & Projects</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Oversaw development of scalable backend infrastructure</li>
-                    <li>Directed technology strategy for cross‑platform products</li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="text-xl font-semibold mb-2">About</h2>
-                <p class="text-gray-700">Arpit is responsible for overall technical direction, ensuring high standards of code quality and system architecture across all projects.</p>
-            </section>
+            <!-- Main Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+                <!-- Left Column -->
+                <div class="md:col-span-1 space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Skills</h2>
+                        <div class="space-y-3">
+                            <div>
+                                <h3 class="font-medium text-gray-800">Frameworks & Languages</h3>
+                                <div class="flex flex-wrap gap-2 mt-1">
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React Native CLI</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Expo CLI</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Redux</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Jest</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Node</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Express</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">Tools & Technologies</h3>
+                                <div class="flex flex-wrap gap-2 mt-1">
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Git</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">DeepLinking</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">SQLite</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Push Notifications</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Tanstack Query</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Tailwind</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Material UI</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Postman</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Rest APIs</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Axios</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">DevOps & Distribution</h3>
+                                <div class="flex flex-wrap gap-2 mt-1">
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">CI/CD</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Github Actions</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Unit Testing</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">App Store Distribution</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Education</h2>
+                        <div class="space-y-3">
+                            <div>
+                                <h3 class="font-medium text-gray-800">Bachelor of Commerce</h3>
+                                <p class="text-gray-600 text-sm">Aug 2007 - Dec 2010</p>
+                                <p class="text-gray-700">University Of Rajasthan, Jaipur, RJ, India</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Certifications</h2>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>
+                                <h3 class="font-medium">React Native: The Practical Guide</h3>
+                                <p class="text-gray-600 text-sm">Academind by Maximilian Schwarzmüller</p>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">Link</a>
+                            </li>
+                            <li>
+                                <h3 class="font-medium">JavaScript Certification Test</h3>
+                                <p class="text-gray-600 text-sm">KnowledgeGate</p>
+                                <a href="#" class="text-blue-600 hover:underline text-sm">Link</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Awards</h2>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>
+                                <h3 class="font-medium">Promising Employee of the Quarter</h3>
+                                <p class="text-gray-600 text-sm">Recognized as the Most Valuable Performer for outstanding management of projects. (Aug 2021)</p>
+                            </li>
+                            <li>
+                                <h3 class="font-medium">MVP Award</h3>
+                                <p class="text-gray-600 text-sm">Awarded Most Valuable Performer for exceptional performance for Tokii app (dating app). (Nov 2024)</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <!-- Right Column -->
+                <div class="md:col-span-2 space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Work Experience</h2>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">React Native Developer</h3>
+                                <p class="text-blue-600 font-medium">Dev Technosys Pvt. Ltd., Jaipur, RJ, India</p>
+                                <p class="text-gray-600 text-sm mb-2">Jun 2025 - Current</p>
+                                <ul class="text-gray-700 list-disc list-inside space-y-1">
+                                    <li>Led the development of enterprise mobile applications across various industries, including e-commerce, medical, dating, fantasy, and fintech, for multiple clients using React Native.</li>
+                                    <li>Led code reviews, mentored junior developers, enforced best practices to maintain code quality, modularity, and scalability across projects.</li>
+                                    <li>Designed and implemented dynamic popup and in-feed advertisement logic, managing display timing, frequency control, user interactions, and optimizing ad visibility while maintaining a seamless user experience.</li>
+                                    <li>Implemented real-time chat functionality with robust socket connection and status handling to ensure reliable messaging and user presence updates.</li>
+                                    <li>Developed and integrated video calling features, managing call lifecycle, permissions, and performance optimization across iOS and Android platforms.</li>
+                                    <li>Oversaw end-to-end app development, release management, and deployment for iOS & Android apps, using Firebase for authentication, deep linking, and push notifications.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">React Native Developer</h3>
+                                <p class="text-blue-600 font-medium">WFA Consultants Pvt. Ltd., Jaipur, RJ, India</p>
+                                <p class="text-gray-600 text-sm mb-2">Apr 2024 - Jun 2025</p>
+                                <ul class="text-gray-700 list-disc list-inside space-y-1">
+                                    <li>Developed and maintained a Telegram directory application, implementing advanced search, filtering, and category-based listings to improve content discoverability and user engagement.</li>
+                                    <li>Built core features for a dating application, including user profile management, real-time interactions, and matching logic, ensuring smooth performance and scalability across platforms.</li>
+                                    <li>Integrated third-party APIs and backend services to support authentication, data synchronization, and real-time updates.</li>
+                                    <li>Collaborated closely with designers and backend teams to translate business requirements into high-quality, user-centric mobile experiences using React Native.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Previous Domain Experience</h2>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Jr. SEO Analyst</h3>
+                                <p class="text-blue-600 font-medium">Uplers Solutions, Ahmedabad, GJ, India</p>
+                                <p class="text-gray-600 text-sm mb-2">Sep 2021 - May 2023</p>
+                                <p class="text-gray-700">Focused on search engine optimization strategies and digital marketing analytics.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Digital Marketing Executive</h3>
+                                <p class="text-blue-600 font-medium">DQ Australia, Jaipur, RJ, India</p>
+                                <p class="text-gray-600 text-sm mb-2">Oct 2020 - Sep 2021</p>
+                                <p class="text-gray-700">Managed digital marketing campaigns and online presence strategies.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Projects</h2>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Business Directory App</h3>
+                                <p class="text-gray-700">Developed a business directory app using Firebase Firestore, integrating Google authentication via Clerk with persistent login using Async Storage, and enabling users to list businesses with review functionality. <a href="#" class="text-blue-600 hover:underline">Link</a></p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">BattleRush Tournament React Admin Panel</h3>
+                                <p class="text-gray-700">Developed a secure admin dashboard for an online gaming tournament app using React.js, Tailwind CSS, and Material-UI.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 </body>
