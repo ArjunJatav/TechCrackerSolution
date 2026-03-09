@@ -3,37 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gargi Pareek - Profile</title>
+    <title>Gargi Pareek - MERN Stack Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-100 font-poppins">
+<body class="bg-gray-50 font-poppins">
     <div class="container mx-auto px-4 py-12">
         <a href="../index.html" class="text-blue-600 hover:underline mb-6 inline-block">&larr; Back to Home</a>
-        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-            <div class="flex flex-col items-center">
-                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-[#3282B8] to-[#0F4C75] flex items-center justify-center text-white text-4xl font-bold mb-4">GP</div>
-                <h1 class="text-2xl font-bold mb-1">Gargi Pareek</h1>
-                <p class="text-blue-600 font-medium mb-4">Head IT & Development</p>
+        <div class="max-w-5xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+            <!-- Header Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-8">
+                <div class="flex flex-col md:flex-row items-center md:items-start">
+                    <div class="w-32 h-32 rounded-full bg-gradient-to-br from-[#3282B8] to-[#0F4C75] flex items-center justify-center text-white text-4xl font-bold mb-4 md:mb-0 md:mr-8">GP</div>
+                    <div class="text-center md:text-left">
+                        <h1 class="text-3xl font-bold mb-2">Gargi Pareek</h1>
+                        <p class="text-xl mb-4">MERN Stack Developer</p>
+                        <div class="flex flex-col md:flex-row md:space-x-6 text-sm">
+                           
+                            <div class="flex items-center mb-2 md:mb-0">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Jaipur, Rajasthan</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-linkedin mr-2"></i>
+                                <a href="https://www.linkedin.com/in/gargi-pareek-17195b1b4/" class="hover:underline" target="_blank">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Education</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Bachelor in Information Technology, MNO University (2014)</li>
-                    <li>Certified Network Security Professional</li>
-                </ul>
-            </section>
-            <section class="mb-6">
-                <h2 class="text-xl font-semibold mb-2">Specialisations</h2>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li>Infrastructure & Cloud Architecture</li>
-                    <li>Security & IT Operations</li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="text-xl font-semibold mb-2">About</h2>
-                <p class="text-gray-700">Gargi ensures the team's tech stack is secure and scalable, handling everything from server configuration to deployment pipelines.</p>
-            </section>
+            <!-- Main Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+                <!-- Left Column -->
+                <div class="md:col-span-1 space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Skills</h2>
+                        <div class="space-y-3">
+                            <div>
+                                <h3 class="font-medium text-gray-800">Frontend</h3>
+                                <div class="flex flex-wrap gap-2 mt-1">
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React.js</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Redux</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript (ES6+)</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">CSS</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">Backend</h3>
+                                <div class="flex flex-wrap gap-2 mt-1">
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Express.js</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">NestJS</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">REST APIs</span>
+                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">WebSockets (Socket.io)</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">Databases</h3>
+                                <div class="flex flex-wrap gap-2 mt-1">
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">Cloud and DevOps</h3>
+                                <div class="flex flex-wrap gap-2 mt-1">
+                                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">FileZilla</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">Tools and Version Control</h3>
+                                <div class="flex flex-wrap gap-2 mt-1">
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Git</span>
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Postman</span>
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Jest</span>
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Mocha</span>
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Swagger</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">eCommerce and API Integration</h3>
+                                <div class="flex flex-wrap gap-2 mt-1">
+                                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Shopify API</span>
+                                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">OAuth Authentication</span>
+                                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Webhook Implementation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Education</h2>
+                        <div class="space-y-3">
+                            <div>
+                                <h3 class="font-medium text-gray-800">Master of Computer Applications (MCA)</h3>
+                                <p class="text-gray-600 text-sm">Dec 2021 - Aug 2023</p>
+                                <p class="text-gray-700">International School Of Informatics And Management, Jaipur</p>
+                                <p class="text-gray-600 text-sm">Relevant Coursework: Software Development, Database Management, Web Technologies, System Analysis</p>
+                            </div>
+                            <div>
+                                <h3 class="font-medium text-gray-800">Bachelor of Computer Applications (BCA)</h3>
+                                <p class="text-gray-600 text-sm">Jul 2018 - Aug 2021</p>
+                                <p class="text-gray-700">Pacific Academy of Higher Education Research University, Udaipur</p>
+                                <p class="text-gray-600 text-sm">Relevant Coursework: Programming, Data Structures, Operating Systems, Software Engineering</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Right Column -->
+                <div class="md:col-span-2 space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Objective</h2>
+                        <p class="text-gray-700 leading-relaxed">Results-driven MERN Stack Developer with hands-on experience in full-stack web development, API integrations, and database management. Seeking to leverage expertise in MongoDB, Express.js, React.js, and Node.js to develop scalable, high-performance web applications. Passionate about real-time functionality, eCommerce solutions, and cloud technologies.</p>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Work Experience</h2>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Node.js/NestJS Developer</h3>
+                                <p class="text-blue-600 font-medium">Dev Technosys, Jaipur</p>
+                                <p class="text-gray-600 text-sm mb-2">Apr 2025 - Present</p>
+                                <ul class="text-gray-700 list-disc list-inside space-y-1">
+                                    <li>Worked on large-scale backend systems using NestJS and TypeScript for robust architecture and maintainability.</li>
+                                    <li>Contributed to the development of Squadduel, a fantasy football platform with real-time data integration from SportsMonk API.</li>
+                                    <li>Integrated ApcoPay for secure and seamless payment processing and managed in-app transaction workflows.</li>
+                                    <li>Implemented Google authentication and user session handling across web and mobile interfaces.</li>
+                                    <li>Designed and managed a centralized notification system for appointment and match updates.</li>
+                                    <li>Played a key role in DoctoLink (Spain), enabling appointment bookings and doctor-patient communication via a custom notification engine.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Node.js Developer</h3>
+                                <p class="text-blue-600 font-medium">SWIL - SwilERP, Jaipur</p>
+                                <p class="text-gray-600 text-sm mb-2">Apr 2024 - Jan 2025</p>
+                                <ul class="text-gray-700 list-disc list-inside space-y-1">
+                                    <li>Developed and managed Swilmart (B2B and B2C) eCommerce platform, optimizing order processing and transactions.</li>
+                                    <li>Built a React.js-based admin panel for product and stock management, reducing manual work.</li>
+                                    <li>Integrated Shopify API with Node.js, implementing OAuth authentication and real-time webhooks.</li>
+                                    <li>Enhanced frontend performance through Redux state management and optimized API calls.</li>
+                                    <li>Implemented real-time updates with WebSockets (Socket.io) for live order tracking.</li>
+                                    <li>Developed APIs for task assignments in Swil Task Panel, improving workflow efficiency.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Node.js Developer</h3>
+                                <p class="text-blue-600 font-medium">Appinop Technology, Jaipur</p>
+                                <p class="text-gray-600 text-sm mb-2">Oct 2022 - Mar 2024</p>
+                                <ul class="text-gray-700 list-disc list-inside space-y-1">
+                                    <li>Worked on cryptocurrency exchange platforms (Flexibits, Cosmic Trade, YMX Exchange, Kxchange).</li>
+                                    <li>Implemented user authentication, KYC verification, and secure wallet integrations.</li>
+                                    <li>Optimized database queries and API endpoints, improving backend speed.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Projects</h2>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Swilmart (B2B B2C) eCommerce Platform</h3>
+                                <p class="text-gray-700">Developed a scalable MERN stack platform supporting real-time inventory updates and checkout processes. Built a dynamic React.js frontend with Redux, enhancing performance. Integrated third-party APIs for reporting, analytics, and user profile management. Improved platform security and optimized backend performance, ensuring seamless transactions.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Shopify Integration with Node.js</h3>
+                                <p class="text-gray-700">Implemented Shopify API integration to sync product listings, customer data, and stock levels. Developed OAuth authentication for secure access and implemented webhooks for real-time updates. Optimized API calls, reducing response time and preventing order mismatches.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Swilmart Admin Panel</h3>
+                                <p class="text-gray-700">Designed an advanced admin panel with real-time order tracking and stock management. Integrated REST APIs for ERP synchronization, ensuring accurate stock updates. Built a dashboard displaying sales trends and inventory insights, aiding decision-making.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Health Insurance Management System</h3>
+                                <p class="text-gray-700">Developed a role-based admin panel for policy and claim management. Integrated payment gateways for premium processing and policy renewals. Ensured data security using encryption and access control mechanisms.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">DoctoLink – Healthcare Appointment System (Spain)</h3>
+                                <p class="text-gray-700">Built using Nest.js and SQL for managing doctor and patient appointment bookings. Implemented a real-time notification management system for appointment alerts and reminders. Enhanced accessibility with multilingual support and secure user authentication.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-gray-800">Squadduel – Fantasy Football Platform</h3>
+                                <p class="text-gray-700">Developed core backend in Node.js with payment integration via ApcoPay. Implemented real-time football data display using SportsMonk API (players, teams, leagues, and seasons). Added Google authentication and a robust notification management system for user engagement.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">Leadership Achievements</h2>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1">
+                            <li>Led the Shopify API integration in Swilmart, improving product sync efficiency by 40%.</li>
+                            <li>Mentored junior developers in Node.js and API development, improving team performance.</li>
+                            <li>Conducted a company-wide session on backend optimization, enhancing team expertise.</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 </body>
